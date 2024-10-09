@@ -140,8 +140,7 @@ impl From<AVHWDeviceType> for DeviceType {
             AVHWDeviceType::AV_HWDEVICE_TYPE_CUDA => Self::Cuda,
             AVHWDeviceType::AV_HWDEVICE_TYPE_DXVA2 => Self::Dxva2,
             AVHWDeviceType::AV_HWDEVICE_TYPE_D3D11VA => Self::D3d11va,
-            // This variant exists in ffmpeg's C lib but not in Rust's crate yet.
-            // AVHWDeviceType::AV_HWDEVICE_TYPE_D3D12VA => Self::D3d12va
+            AVHWDeviceType::AV_HWDEVICE_TYPE_D3D12VA => Self::D3d12va,
             AVHWDeviceType::AV_HWDEVICE_TYPE_DRM => Self::Drm,
             AVHWDeviceType::AV_HWDEVICE_TYPE_MEDIACODEC => Self::MediaCodec,
             AVHWDeviceType::AV_HWDEVICE_TYPE_OPENCL => Self::OpenCl,
